@@ -1,0 +1,16 @@
+#sis-box input {
+    font-family: 'Bree Serif', serif;
+    width: 104%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    margin: 6px 24px;
+    margin: 6px -28px;
+}
+
+
+.prt{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 0px 23px;
+    margin: 23px;
+}

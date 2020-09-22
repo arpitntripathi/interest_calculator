@@ -1,0 +1,358 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Main-H{
+    
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    color: white;
+    padding: 3px;
+    background-color: black;
+    font-family: 'Baloo Da 2', cursive;
+
+}
+/* left and right part  */
+#container{
+    min-height: 100vh;
+    display: flex;
+
+}
+.left{
+    width: 50vw;
+    background-color: #abc;
+    position: relative;
+    
+}
+.right{
+    width: 50vw;
+    background-color: #687;
+
+}
+
+/* Home Section  */
+#home{
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 224px 0px;
+    height: 368px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#home::before{
+    content: "";
+    background-color: #e5f7508c;
+    
+   
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6; 
+}
+#sis-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#sis-box input
+{   font-family: 'Bree Serif', serif;
+    width: 104%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin: 7px 24px;
+}
+
+#sis-box label {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    
+}
+/* Utility class */
+.h-primary{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.7rem;
+    padding: 3px;
+}
+
+#siresult{
+    border: 2px solid brown;
+    font-size: 1.3rem;
+    font-family: 'Baloo Tamma 2', cursive;
+    padding: 13px;
+    margin: 90px 39px;
+    border-radius: 5px;
+    background-color: #0000009e;
+    color: white;
+
+}
+
+
+
+/* Home Section 2  */
+#home2{
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 393px 15px;
+    height: 354px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#home2::before{
+    content: "";
+    background-color: #e5f7508c;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6; 
+}
+#cis-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#cis-box input
+{     font-family: 'Bree Serif', serif;
+    width: 89%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin: 7px 24px;
+
+}
+
+#cis-box label {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    
+}
+
+
+
+    /* Utility class */
+.h-primary1{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 12px;
+
+}
+
+#ciresult{
+    border: 2px solid brown;
+    font-size: 1.3rem;
+    font-family: 'Baloo Tamma 2', cursive;
+    padding: 13px;
+    margin: 48px 36px;
+    border-radius: 4px;
+    background-color: #0000009e;
+    color: white;
+
+}
+
+    .btn{
+    padding: 16px 38px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin-bottom: 41px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    cursor: pointer;
+    }
+    
+    .btnNext{
+        padding: 7px 47px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 41px;
+    font-size: 1.0rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+
+    }
+
+    
+  /* right side  part 1   */
+
+
+  #right-home{
+    position: relative;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 224px 0px;
+    height: 368px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+#right-home::before{
+    content: "";
+    background-color: #e5f7508c;
+    
+   
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6; 
+}
+    
+  
+  
+  
+  
+  
+  
+  
+  
+    .para{
+    text-align: left;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+    padding: 12px;
+    margin: 12px 13px;
+    }
+
+
+/* right side  part 2   */
+
+#right-home1
+{
+
+    position: relative;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 92px 21px;
+    height: 866px;
+    justify-content: top;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+#right-home1::before{
+    content: "";
+    background-color: #e5f7508c;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.6; 
+}
+
+.right button{
+    margin: 0px;
+}
+
+#right-home p{
+    text-align: left;
+}
+
+
+/* last work  */
+
+/* part1 */
+#sidiv2
+{
+    cursor: pointer;
+}
+#sidiv2:hover{
+    color: black ;
+    background-color: white;
+}
+#sidiv3
+{
+    cursor: pointer;
+}
+#sidiv3:hover{
+    color: royalblue ;
+    background-color: white;
+}
+#sidiv4
+{
+    cursor: pointer;
+}
+#sidiv4:hover{
+    color: rgb(0, 0, 0) ;
+    background-color: white;
+}
+#sidiv5
+{
+    cursor: pointer;
+}
+#sidiv5:hover{
+    color: royalblue ;
+    background-color: white;
+}
+/* part2 */
+#cidiv2
+{
+    cursor: pointer;
+}
+#cidiv2:hover{
+    color:  royalblue;
+    background-color: white;
+}
+#cidiv3
+{
+    cursor: pointer;
+}
+#cidiv3:hover{
+    color: black  ;
+    background-color: white;
+}
+#cidiv4
+{
+    cursor: pointer;
+}
+#cidiv4:hover{
+    color: royalblue ;
+    background-color: white;
+}
+#cidiv5
+{
+    cursor: pointer;
+}
+#cidiv5:hover{
+    color: black   ;
+    background-color: white;
+}
+#cidiv6
+{
+    cursor: pointer;
+}
+#cidiv6:hover{
+    color: royalblue ;
+    background-color: white;
+}
+
+/* execution instrition */
+.EC{
+    font-size: 1.3em;
+}

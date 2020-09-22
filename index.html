@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest|Compound Interest|Calculation|BIT GKP</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width:1091px)" href="./css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width:780px)" href="./css/phone1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript" src="./js/script.js"></script>
+
+<body>
+    <h1 class="Main-H"> Simple and Compound Interest Simulator </h1>
+
+
+
+    <div id="container">
+
+        <div class=left>
+
+            <!-- Arpit Section   -->
+
+            <section id="home">
+                <br>
+                <h1 class="h-primary">Simple Interest Calculation </h1>
+                <div id="sis-box">
+                    <form action="">
+
+                        <div>
+                            <label for="Amount"> Amount: </label>
+                            <input type="hidden" id="sip" placeholder="Enter the Amount" name="Amount"><br />
+
+                        </div>
+                        <div>
+
+                            <label for="rate"> Rate(%): </label>
+                            <input type="hidden" id="sir" placeholder="Enter the Rate in %" name="rate"><br />
+
+                        </div>
+                        <div>
+
+                            <label for="Year"> No. of Years: </label>
+                            <input type="hidden" id="sin" placeholder="Enter the Year" name="Year"><br />
+                        </div>
+
+                    </form>
+                
+                <button id="sibtn" style="display: none;" class="btn" onclick="siCalculate()">Calculate</button>
+                <div class="prt">
+                    <h2>SI = <pr id="pr">P</pr> * <rt id="rt">R</rt> * <ti id="ti">T</ti> / 100</h2>
+                </div>
+                <p id="siresult"></p>
+
+            </section>
+
+
+            <!-- This is compound Interest Section  -->
+
+            <section id="home2">
+                <br><br><br><br><br><br><br><br><br>
+                <h1 class="h-primary1"> Compound Interest Calculation </h1>
+                <div id="cis-box">
+                    <form action="">
+                        <div>
+
+                            <label for="Amount"> Amount: </label>
+                            <input type="hidden" id="cip" placeholder="Enter the Amount" name="Amount">
+
+                        </div>
+
+                        <div>
+
+                            <label for="rate"> Rate(%): </label>
+                            <input type="hidden" id="cir" placeholder="Enter the Rate in Percentage" name="rate">
+
+                        </div>
+
+                        <div>
+
+                            <label for="Year"> No. of Years: </label>
+                            <input id="cit" type="hidden" placeholder="Enter the Year" name="Year">
+
+                        </div>
+
+                        <div>
+
+                            <label for="Compunding"> Compunding Times Per Year: </label>
+                            <input type="hidden" id="cin" placeholder="Enter Compunding Time per Year" name="Compunding">
+
+                        </div>
+
+
+
+                    </form>
+                </div>
+                <button id="cibtn" style="display: none;" class="btn" onclick="ciCalculate()">Calculate</button>
+
+                <h2>A = <cp id="cp">P</cp>(1 + <cr id="cr">r</cr>/<cn id="cn">n</cn>)<sup>
+                        <cn id="cn1">n</cn>*<ct id="ct">t</ct>
+                    </sup></h2>
+                <h2>CI = <ca id="ca">A</ca> - <cp id="cp1">P</cp>
+                </h2>
+
+
+                <p id="ciresult"></p>
+                <br><br><br><br><br><br><br><br>
+
+            </section>
+
+        </div>
+
+
+
+        <div class=right>
+
+            <section id="right-home">
+                <h1 class="h-primary"> Procedure Code Of Simple Interest <br><br> </h1>
+                <h2>Process to Execute Code</h2>
+                <p class="EC"> 1.&nbsp;Click the Start execution Button<br>
+                    2.&nbsp;Click on further statements to execute them </p>
+                <p class="para">
+                    <button class="btn" onclick="start()">Start execution</button><br>
+                    <span id="sidiv1">
+                        #include &lt;stdio.h&gt; <br>
+                        #include &lt;conio.h&gt; <br>
+                        void main()<br>
+                        {<br>
+                        int p,r,t,cal;<br>
+                        </span>
+                    <span id="sidiv2" onclick="siDiv2()">
+                        printf("Input The Amount: \n");<br>
+                        scanf("%d",&p);<br>
+                    </span>
+                    <span id="sidiv3" onclick="siDiv3()">
+                        printf("Input The Rate: \n");<br>
+                        scanf("%d",&r);<br>
+                    </span>
+                    <span id="sidiv4" onclick="siDiv4()">
+                        printf("Input Number of Year: \n");<br>
+                        scanf("%d",&t);<br>
+                    </span>
+                    <span id="sidiv5" onclick="siDiv5()">
+                        cal=(p*r*t)/100;<br>
+                        printf("The Simple interest is = %d",cal);<br>
+                        getch();<br>
+                        }<br>
+                    </span>
+                </p>
+            </section>
+
+
+            <section id="right-home1">
+                <h1 class=" h-primary"> Procedure Code Of Compound Interest <br><br> </h1>
+                <h2>Process to Execute Code</h2>
+                <p class="EC"> 1.&nbsp;Click the Start execution Button <br>
+                    2.&nbsp;Click on further statements to execute them </p>
+                <p class="para">
+                    <button class="btn" onclick="start1()">Start Execution</button><br>
+                    <span id="cidiv1">
+                        #include &lt;stdio.h&gt; <br>
+                        #include &lt;conio.h&gt; <br>
+                        void main()<br>
+                        {<br>
+                        float principle, rate, time, n, A, CI;<br>
+                    </span>
+                    
+                    <span id="cidiv2" onclick="ciDiv2()">
+                        printf("Enter principle (amount): ");<br>
+                        scanf("%f", &principle);<br>
+                    </span>
+                    <span id="cidiv3" onclick="ciDiv3()">
+                        printf("Enter rate: ");<br>
+                        scanf("%f", &rate);<br>
+                    </span>
+                    <span id="cidiv4" onclick="ciDiv4()">
+                        printf("Enter time: ");<br>
+                        scanf("%f", &time);<br>
+                    </span>
+                    <span id="cidiv5" onclick="ciDiv5()">
+                        printf("Enter compounding per Year: ");<br>
+                        scanf("%f", &n);<br>
+                    </span>
+                
+                    <span id="cidiv6" onclick="ciDiv6()">
+                        A = principle* (pow((1 + rate / n), n*time));<br>
+                        CI = A - P;<br>
+                        printf("Total amount = %f", A);<br>
+                        printf("Compound Interest = %f", CI);<br>
+                        getch();<br>
+                        }<br>
+                    </span>
+                </p>
+            </section>
+
+
+
+        </div>
+
+
+
+        </container>
+    </div>
+</body>
+
+
+</html>
